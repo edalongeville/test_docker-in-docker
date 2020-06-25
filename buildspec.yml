@@ -9,7 +9,8 @@ phases:
       - timeout 15 sh -c "until docker info; do echo .; sleep 1; done"
   pre_build:
     commands:
-      - yum -y update
+      #- yum -y update
+      - yum -y install amazon-linux-extras
       # Taskfile
       #- yum -y install tar gzip
       #- curl -sL https://taskfile.dev/install.sh | sh
