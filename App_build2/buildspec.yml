@@ -14,7 +14,7 @@ phases:
       # update the following line with your own region
       - $(aws ecr get-login --no-include-email --region eu-west-1)
       - IMAGE_TAG=app-build-2
-      - REPOSITORY_URI=237125764297.dkr.ecr.eu-west-1.amazonaws.com/codebuild-images
+      #- REPOSITORY_URI=237125764297.dkr.ecr.eu-west-1.amazonaws.com/codebuild-images
     build: 
       commands: 
       - echo Build started on `date` 
